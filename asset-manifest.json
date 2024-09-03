@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/persis-indian-grill/static/css/main.6c1e6088.css",
-    "main.js": "/persis-indian-grill/static/js/main.48346735.js",
+    "main.js": "/persis-indian-grill/static/js/main.5899f724.js",
     "static/js/453.d81aedee.chunk.js": "/persis-indian-grill/static/js/453.d81aedee.chunk.js",
     "index.html": "/persis-indian-grill/index.html",
     "main.6c1e6088.css.map": "/persis-indian-grill/static/css/main.6c1e6088.css.map",
-    "main.48346735.js.map": "/persis-indian-grill/static/js/main.48346735.js.map",
+    "main.5899f724.js.map": "/persis-indian-grill/static/js/main.5899f724.js.map",
     "453.d81aedee.chunk.js.map": "/persis-indian-grill/static/js/453.d81aedee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6c1e6088.css",
-    "static/js/main.48346735.js"
+    "static/js/main.5899f724.js"
   ]
 }
