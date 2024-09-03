@@ -4,24 +4,22 @@ import './App.css';
 // Sample data for the menu
 const menuData = {
   appetizers: [
-    { name: 'Bruschetta', price: '$5.99' },
-    { name: 'Stuffed Mushrooms', price: '$6.99' },
-    { name: 'Garlic Bread', price: '$4.99' },
+    { name: 'Gobi Manchurian', price: '$12.99' },
+    { name: 'Chilli Paneer', price: '$12.99' },
+    { name: 'Chilli Baby Corn', price: '$12.99' },
   ],
   mainCourses: [
-    { name: 'Grilled Salmon', price: '$15.99' },
-    { name: 'Spaghetti Carbonara', price: '$12.99' },
-    { name: 'Chicken Parmesan', price: '$13.99' },
+    { name: 'Navaratan Koorma', price: '$14.99' },
+    { name: 'Saag Paneer', price: '$14.99' }
   ],
   desserts: [
-    { name: 'Tiramisu', price: '$6.99' },
-    { name: 'Cheesecake', price: '$5.99' },
-    { name: 'Chocolate Lava Cake', price: '$7.99' },
+    { name: 'Gulab Jamun', price: '$5.99' },
+    { name: 'Carrot Halwa', price: '$5.99' },
+    { name: 'Rasmalai', price: '$5.99' },
   ],
   beverages: [
-    { name: 'Coffee', price: '$2.99' },
-    { name: 'Fresh Orange Juice', price: '$3.99' },
-    { name: 'Red Wine', price: '$6.99' },
+    { name: 'Mango Lassi', price: '$3.99' },
+    { name: 'Fresh Sugercane Juice', price: '$4.99' }
   ],
 };
 
@@ -46,10 +44,10 @@ function App() {
         <h1>Welcome to Persis Indian Grill</h1>
       </header>
       <div className="menu">
-        <MenuSection title="Appetizers" items={menuData.appetizers} />
-        <MenuSection title="Main Courses" items={menuData.mainCourses} />
-        <MenuSection title="Desserts" items={menuData.desserts} />
-        <MenuSection title="Beverages" items={menuData.beverages} />
+        <MenuSection title="Special Appetizers" items={menuData.appetizers} />
+        <MenuSection title="Special Main Courses" items={menuData.mainCourses} />
+        <MenuSection title="Special Desserts" items={menuData.desserts} />
+        <MenuSection title="Special Beverages" items={menuData.beverages} />
       </div>
     </div>
   );
