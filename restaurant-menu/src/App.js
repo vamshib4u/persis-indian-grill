@@ -1,69 +1,58 @@
 import React from 'react';
 import './App.css';
 
+// Sample data for the menu
+const menuData = {
+  appetizers: [
+    { name: 'Bruschetta', price: '$5.99' },
+    { name: 'Stuffed Mushrooms', price: '$6.99' },
+    { name: 'Garlic Bread', price: '$4.99' },
+  ],
+  mainCourses: [
+    { name: 'Grilled Salmon', price: '$15.99' },
+    { name: 'Spaghetti Carbonara', price: '$12.99' },
+    { name: 'Chicken Parmesan', price: '$13.99' },
+  ],
+  desserts: [
+    { name: 'Tiramisu', price: '$6.99' },
+    { name: 'Cheesecake', price: '$5.99' },
+    { name: 'Chocolate Lava Cake', price: '$7.99' },
+  ],
+  beverages: [
+    { name: 'Coffee', price: '$2.99' },
+    { name: 'Fresh Orange Juice', price: '$3.99' },
+    { name: 'Red Wine', price: '$6.99' },
+  ],
+};
+
+function MenuSection({ title, items }) {
+  return (
+    <div className="menu-section">
+      <h2>{title}</h2>
+      {items.map((item, index) => (
+        <div key={index} className="menu-item">
+          <h3>{item.name}</h3>
+          <span>{item.price}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to Persis Indian Grill</h1>
+        <h1>Welcome to Our Restaurant</h1>
       </header>
-      <div class="menu">
-        <div class="menu-section">
-            <h2>Appetizers</h2>
-            <div class="menu-item">
-                <h3>Gobi Manchurian</h3>
-                <span>$12.99</span>
-            </div>
-            <div class="menu-item">
-                <h3>Chilli Paneer</h3>
-                <span>$12.99</span>
-            </div>
-            <div class="menu-item">
-                <h3>Chilli Baby Corn</h3>
-                <span>$12.99</span>
-            </div>
-        </div>
-        <div class="menu-section">
-            <h2>Main Courses</h2>
-            <div class="menu-item">
-                <h3>Navaratan Koorma</h3>
-                <span>$15.99</span>
-            </div>
-            <div class="menu-item">
-                <h3>Saag Paneer</h3>
-                <span>$15.99</span>
-            </div>
-        </div>
-        <div class="menu-section">
-            <h2>Desserts</h2>
-            <div class="menu-item">
-                <h3>Gulab Jamun</h3>
-                <span>$5.99</span>
-            </div>
-            <div class="menu-item">
-                <h3>Carrot Halwa</h3>
-                <span>$5.99</span>
-            </div>
-            <div class="menu-item">
-                <h3>Rasmalai</h3>
-                <span>$5.99</span>
-            </div>
-        </div>
-        <div class="menu-section">
-            <h2>Beverages</h2>
-            <div class="menu-item">
-                <h3>Mango Lassi</h3>
-                <span>$3.99</span>
-            </div>
-            <div class="menu-item">
-                <h3>Sugercane Juice</h3>
-                <span>$5.99</span>
-            </div>
-        </div>
+      <div className="menu">
+        <MenuSection title="Appetizers" items={menuData.appetizers} />
+        <MenuSection title="Main Courses" items={menuData.mainCourses} />
+        <MenuSection title="Desserts" items={menuData.desserts} />
+        <MenuSection title="Beverages" items={menuData.beverages} />
       </div>
     </div>
   );
 }
 
 export default App;
-
