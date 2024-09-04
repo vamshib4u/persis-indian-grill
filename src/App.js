@@ -4,7 +4,7 @@ import './App.css';
 // Sample data for the menu
 const menuData = {
   appetizers: [
-    { name: 'Gobi Manchurian', price: '$12.99' },
+    { name: 'Chicken Pakoda', price: '$14.99' },
     { name: 'Chilli Paneer', price: '$12.99' },
     { name: 'Chilli Baby Corn', price: '$12.99' },
   ],
